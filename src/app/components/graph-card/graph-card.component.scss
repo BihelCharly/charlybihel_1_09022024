@@ -1,0 +1,25 @@
+.card {
+    border: #04838F 2px solid;
+    border-radius: 10px;
+    width: auto;
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    max-height: 100px;
+    font-size: 18px;
+    .card-description {
+        color: rgb(80, 80, 80);
+        text-align: center;
+        width: 100%;
+        .card-number {
+            width: 100%;
+            font-weight: 800;
+        }
+    }
+}
