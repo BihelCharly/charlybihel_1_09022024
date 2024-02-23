@@ -1,12 +1,14 @@
 <h2>Olympic games app</h2>
 <hr />
 <p>{{ (olympics$ | async)?.length }} data loaded</p>
-
 <main>
     <div class="bloc">
         <div class="cards">
             <app-graph-card></app-graph-card>
             <app-graph-card></app-graph-card>
+            <div *ngFor="let object of olympics$ | async">
+               <div>{{object.country}}</div> 
+            </div>
         </div>
     </div>
 

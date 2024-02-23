@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, map, of } from 'rxjs';
 import { OlympicService } from 'src/app/core/services/olympic.service';
 
 @Component({
@@ -14,5 +14,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.olympics$ = this.olympicService.getOlympics();
+    console.log(this.olympics$);
   }
 }
